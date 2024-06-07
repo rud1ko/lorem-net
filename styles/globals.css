@@ -1,0 +1,36 @@
+@import "fonts.css";
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --light-blue: #42a9ed;
+    --dark-blue: #3e9cdc;
+    --nav-blue: #43abf0;
+    --border-blue: #286690;
+    --placeholder-black: #272733;
+    --gray: #c3c3c3;
+    --font-LatoRegular: Lato-Regular, sans-serif;
+    --font-LatoBold: Lato-Bold, sans-serif;
+    --font-LatoSemiBold: Lato-SemiBold, sans-serif;
+    --font-LatoBlack: Lato-Black, sans-serif;
+    --font-RalewayExtraBold: "Raleway", sans-serif;
+}
+
+body {
+    font-family: var(--font-LatoRegular);
+    font-weight: 400;
+    font-size: 20px;
+    margin: 0;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    overflow-x: hidden;
+    background-color: green;
+    color: var(--white);
+}
+
+body,
+html,
+#root {
+    height: 100%;
+}

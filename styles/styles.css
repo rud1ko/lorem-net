@@ -1,0 +1,47 @@
+@import "globals.css";
+@import "reset.css";
+
+#root{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+    'header header header'
+    'main main main'
+    'footer footer footer';
+}
+
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto minmax(320px, 1172px);
+    grid-template-areas:
+    '. header__container .';
+    background: rgba(16, 16, 29, 0.9);
+}
+
+.header__container{
+    grid-area: header__container;
+}
+
+.header__logo{
+    font-family: var(--font-RalewayExtraBold);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.header__domen1{
+    color: var(--light-blue);
+}
+
+.header__navigation{
+
+}
+
+.main{
+    grid-area: main;
+}
+
+.footer{
+    grid-area: footer;
+}
