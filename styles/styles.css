@@ -14,28 +14,43 @@
 .header{
     grid-area: header;
     display: grid;
-    grid-template-columns: auto minmax(320px, 1172px);
+    grid-template-columns: auto minmax(320px, 1172px) auto;
     grid-template-areas:
     '. header__container .';
     background: rgba(16, 16, 29, 0.9);
+    padding: 33.5px 0 31.5px;
 }
 
 .header__container{
     grid-area: header__container;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
 }
 
 .header__logo{
     font-family: var(--font-RalewayExtraBold);
     font-weight: 800;
     text-transform: uppercase;
+    font-size: 28px;
+    height: 35px;
 }
 
-.header__domen1{
+.header__domain-1{
     color: var(--light-blue);
 }
 
-.header__navigation{
+.header__navigation-list{
+    display: flex;
+    gap: 60px;
+}
 
+.header__navigation-item{
+    transition: color 0.3s ease-in-out;
+}
+
+.header__navigation-item:hover{
+    color: var(--dark-blue);
 }
 
 .main{
@@ -43,5 +58,80 @@
 }
 
 .footer{
-    grid-area: footer;
+    grid-area: footer;display: grid;
+    grid-template-columns: auto minmax(320px, 1172px) auto;
+    grid-template-areas:
+    '. footer__container .';
+    background-color: var(--footer-gray);
+    padding: 30px 0;
+    font-size: 13px;
+}
+
+.footer__container{
+    grid-area: footer__container;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+}
+
+.footer__payment-list,
+.footer__contacts-list{
+    display: grid;
+    grid-column-gap: 38px;
+}
+
+.footer__payment-list{
+    grid-template-columns: repeat(3, auto);
+}
+
+.footer__contacts-list{
+    grid-template-columns: repeat(2, auto);
+}
+
+.footer__payment-item{
+    color: var(--gray);
+}
+
+.footer__payment-item,
+.footer__contact-item-link{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__contact-item{
+    transition: color 0.3s linear;
+}
+
+.footer__contact-item:hover{
+    color: var(--light-blue);
+}
+
+.footer__copyright{
+    position: relative;
+}
+
+.footer__copyright:after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    top: 1px;
+    right: -40px;
+    background-color: var(--gray);
+}
+
+
+.footer__payment-systems{
+    position: relative;
+}
+
+.footer__payment-systems:after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    top: 1px;
+    right: -42.5px;
+    background-color: var(--gray);
 }
