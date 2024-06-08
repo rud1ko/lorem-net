@@ -47,9 +47,106 @@
             </div>
         </header>
         <main class="main">
-            <div class="style">
-                Hello
-            </div>
+            <section class="main__title-info">
+                <h1 class="main__title">
+                    <span class="main__title-span">Lorem ipsum</span> dolor sit ametconsectetur <span class="main__title-span">adipiscing</span>
+                </h1>
+                <div class="main__description-container">
+                    <h2 class="main__description-title">
+                        At vero eos et accusamus et iusto odio dignissimos ducimus!
+                    </h2>
+                    <ul class="main__description-list">
+                        <li class="main__description-item">Totam rem aperiam eaque ipsa</li>
+                        <li class="main__description-item">Sit voluptatem accusantium doloremque laudantium</li>
+                        <li class="main__description-item">Sed ut perspiciatis, unde omnis iste natus error</li>
+                    </ul>
+                </div>
+                <div class="main__title-info-buttons">
+                    <button type="button" class="main__button-order">
+                        Заказать
+                    </button>
+                    <button type="button" class="main__button-more-details">
+                        Подробнее
+                    </button>
+                </div>
+            </section>
+            <section class="main__checkout-order">
+                <div class="main__checkout-order-title-block">
+                    <h2 class="main__checkout-order-title">
+                        Оформление <span class="main__checkout-order-title-span">Заказа</span>
+                    </h2>
+                    <p class="main__checkout-order-description">
+                        Перед заполнением формы ознакомьтесь с нашей схемой работы!
+                    </p>
+                </div>
+                <div class="main__checkout-order-advantage">
+                    <ul class="main__checkout-order-advantage-list">
+                        <li class="main__checkout-order-advantage-item">
+                            <div>
+                                <div class="main__checkout-order-advantage-item-circle circle-1"></div>
+                                <p class="main__checkout-order-advantage-item-text">
+                                    Lorem ipsum dolor sit amet
+                                </p>
+                            </div>
+                        </li>
+                        <li class="main__checkout-order-advantage-item">
+                            <div>
+                                <div class="main__checkout-order-advantage-item-circle circle-2"></div>
+                                <p class="main__checkout-order-advantage-item-text">
+                                    Сonsecteturadipiscing elit
+                                </p>
+                            </div>
+                        </li>
+                        <li class="main__checkout-order-advantage-item">
+                            <div>
+                                <div class="main__checkout-order-advantage-item-circle circle-3"></div>
+                                <p class="main__checkout-order-advantage-item-text">
+                                    Sed do eiusmod tempor
+                                </p>
+                            </div>
+                        </li>
+                        <li class="main__checkout-order-advantage-item">
+                            <div>
+                                <div class="main__checkout-order-advantage-item-circle circle-4"></div>
+                                <p class="main__checkout-order-advantage-item-text">
+                                    Esse cillum dolore
+                                    eu fugiat
+                                </p>
+                            </div>
+                        </li>
+                        <li class="main__checkout-order-advantage-item">
+                            <div>
+                                <div class="main__checkout-order-advantage-item-circle circle-5"></div>
+                                <p class="main__checkout-order-advantage-item-text">
+                                    Excepteur sint occaecat cupidatat non proident
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <form class="main__checkout-order-form" action="#">
+                    <select id="mySelect">
+                        <option value="" disabled selected>Выберите тип системы</option>
+                        <option value="red">Красный</option>
+                        <option value="blue">Синий</option>
+                        <option value="green">Зеленый</option>
+                    </select>
+                    <input type="email" class="main__checkout-order-form-email" placeholder="Ваш e-mail" name="email"/>
+                    <input type="text" class="main__checkout-order-form-name" placeholder="Ваше имя" name="name"/>
+                    <div class="main__checkout-order-form-range-block">
+                        <p>Sed ut perspiciatis, unde omnis iste natus</p>
+                        <span id="rangeNum"></span>
+                        <input id="rangeInput" max="100" min="0" type="range" value="75">
+                    </div>
+                    <label class="input-file">
+                        <input type="file" name="file">
+                        <span>Прикрепить файл</span>
+                    </label>
+                    <button type="submit" class="main__checkout-order-form-button">
+                        Отправить
+                    </button>
+                </form>
+            </section>
         </main>
         <footer class="footer">
             <div class="footer__container">

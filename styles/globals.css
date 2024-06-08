@@ -10,6 +10,9 @@
     --placeholder-black: #272733;
     --gray: #c3c3c3;
     --footer-gray: #3d4050;
+    --button-black: #2a2b30;
+    --button-border: #6f6d7b;
+    --smooth-gray: #bbb;
     --font-LatoRegular: Lato-Regular, sans-serif;
     --font-LatoBold: Lato-Bold, sans-serif;
     --font-LatoSemiBold: Lato-SemiBold, sans-serif;
@@ -26,7 +29,7 @@ body {
     scroll-behavior: smooth;
     text-rendering: optimizeSpeed;
     overflow-x: hidden;
-    background-color: green;
+    background-color: black;
     color: var(--white);
 }
 
