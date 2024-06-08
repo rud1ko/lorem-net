@@ -672,8 +672,9 @@ input[type=range]::-ms-thumb {
     cursor: pointer;
 }
 
-.select:focus{
+.select:focus {
     outline: none;
+}
 
 .main__custom-select::after {
     content: "";
