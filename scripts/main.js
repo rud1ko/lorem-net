@@ -18,12 +18,28 @@ form.addEventListener('submit', function(event) {
     event.preventDefault();
     let formData = new FormData(this);
 
-    fetch(this.action, {
-        method: 'POST',
-        body: formData
-    }).then(function(response) {
-        console.log(response);
-    }).catch(function(error) {
-        console.error(error);
+    let isValid = true;
+    this.querySelectorAll('input, select').forEach(function(field) {
+        if (field.value.trim() === '') {
+            isValid = false;
+        }
     });
+
+    if (isValid) {
+        fetch(this.action, {
+            method: 'POST',
+            body: formData
+        }).then(function(response) {
+            console.log(response);
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+            form.reset()
+        }).catch(function(error) {
+            console.error(error);
+        });
+    } else {
+        alert('Пожалуйста, заполните все поля формы!');
+    }
 });
