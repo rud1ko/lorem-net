@@ -46,8 +46,8 @@ form.addEventListener('submit', function(event) {
 
 // Получаем элементы слайдера
 const slider = document.querySelector('.slider');
-const prevButton = document.querySelector('.prev-button');
-const nextButton = document.querySelector('.next-button');
+const prevButton = document.querySelector('.slider__prev-button');
+const nextButton = document.querySelector('.slider__next-button');
 const slides = Array.from(slider.querySelectorAll('div'));
 const slideCount = slides.length;
 let slideIndex = 0;

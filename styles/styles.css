@@ -182,12 +182,12 @@
         'l1 l2 l3'
         'l4 . l5';
     }
-    .prev-button {
+    .slider__prev-button {
         left: 150px !important;
         top: 100px !important;
     }
 
-    .next-button {
+    .slider__next-button {
         right: 150px !important;
         top: 100px !important;
     }
@@ -449,12 +449,12 @@
         top: 886px !important;
     }
 
-    .prev-button{
+    .slider__prev-button{
         left: 30px !important;
         top: 120px !important;
     }
 
-    .next-button{
+    .slider__next-button{
         right: 30px !important;
         top: 120px !important;
     }
@@ -532,10 +532,10 @@
         height: 1665px !important;
         top: 886px !important;
     }
-    .prev-button{
+    .slider__prev-button{
         top: 70px !important;
     }
-    .next-button{
+    .slider__next-button{
         top: 70px !important;
     }
 }
@@ -1165,8 +1165,8 @@ input[type=range]::-ms-thumb {
     padding: 30px;
 }
 
-.prev-button,
-.next-button {
+.slider__prev-button,
+.slider__next-button {
     cursor: pointer;
     position: absolute;
     top: 110px;
@@ -1181,17 +1181,17 @@ input[type=range]::-ms-thumb {
     transition: 0.3s ease-in-out;
 }
 
-.prev-button:hover,
-.next-button:hover{
+.slider__prev-button:hover,
+.slider__next-button:hover{
     background-color: var(--dark-blue);
     color: var(--white);
 }
 
-.prev-button {
+.slider__prev-button {
     left: 10px;
 }
 
-.next-button {
+.slider__next-button {
     right: 10px;
 }
 
